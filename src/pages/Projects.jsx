@@ -36,7 +36,7 @@ const Projects = () => {
 
              {project.video && (
                 <video
-                  src={project.video}
+                  src={`${import.meta.env.BASE_URL}${project.video}`}
                   className='w-full h-60 object-cover rounded-xl mt-4'
                   autoPlay
                   loop
