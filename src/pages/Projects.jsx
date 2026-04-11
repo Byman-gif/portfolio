@@ -45,7 +45,7 @@ const Projects = () => {
                 />
               )}
               <div className='mt-5 flex items-center gap-2 font-poppins'>
-                <Link
+                {/*<Link
                   to={project.link}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -55,7 +55,7 @@ const Projects = () => {
                 <img
                   src={arrow}
                   alt="arrow"
-                  className='w-4 h-4 object-contain' />
+                  className='w-4 h-4 object-contain' />*/}
               </div>
             </div>
           </div>
