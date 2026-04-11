@@ -188,7 +188,6 @@ export const projects = [
         name: 'Ai Riding coach web application',
         description: 'Developed a web application that tracks the riders body angles during their riding session. Helps rider and the coach to visualise how they can optimize the riding posture.',
         video: '/videos/airide.mp4',
-        link: 'https://github.com/adrianhajdin/pricewise',
     },
     {
         iconUrl: dice,
@@ -196,13 +195,11 @@ export const projects = [
         name: 'My own mobile game',
         description: 'Created a mobile game that has wall jump mechanics and attack mechanics were you are supposed to pick up diamonds and scored with each pick. You have also a pause in the game.',
         video: '/videos/mygame.mov',
-        link: 'https://github.com/adrianhajdin/threads',
     },
     {
         iconUrl: food,
         theme: 'btn-back-blue',
         name: 'Food randomizer app',
         description: 'Building an app that randomizes meals for you for the day and then makes a shopping list for the ingredients that you need for you to make those meals. Might be possible to collab with stores and their items so that consumer can use the app to pick a store and use their items. THIS IS IN PROGRESS STILL!',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     },
 ];
