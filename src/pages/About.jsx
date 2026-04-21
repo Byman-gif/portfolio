@@ -89,7 +89,7 @@ const About = () => {
             </VerticalTimeline>
           </div>
           <h3 className='subhead-text'>My Referees</h3>
-          <div className="mt-6 flex gap-16">
+          <div className="mt-6 flex gap-15">
             <SpeechBubbleCard
               image={marko}
               name="Marko Suokas"

@@ -77,7 +77,7 @@ const Contact = () => {
             />
           </label>
           <label className='text-black-500 font-semibold'>
-            Email
+            Your Email
             <input
               type='email'
               name='email'
