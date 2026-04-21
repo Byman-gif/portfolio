@@ -9,5 +9,5 @@ export default defineConfig({
     tailwindcss(),
   ],
   assetsInclude: ['**/*.glb'],
-  base: '/portfolio',
+  base: '/portfolio/',
 })

@@ -17,9 +17,9 @@ const About = () => {
       </div>
       <div className='mt-6'>
           <a
-            href="/Roi_CV.pdf"
+            href={`${import.meta.env.BASE_URL}Roi_CV.pdf`}
             download
-            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition inline-block"
           >
             You can find my CV here! 📄 
           </a>
