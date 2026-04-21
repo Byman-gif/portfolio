@@ -1,11 +1,14 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import marko from '../assets/images/marko.jpg'
+import roope from '../assets/images/roope.jpg'
+import SpeechBubbleCard from '../components/ReferenceBubble';
 
 import { skills, experiences} from '../constants'
 import CTA from '../components/CTA';
 
-
+//https://byman-gif.github.io/portfolio/
 const About = () => {
   return (
     <section className='max-container'>
@@ -84,6 +87,22 @@ const About = () => {
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>
+          </div>
+          <h3 className='subhead-text'>My Referees</h3>
+          <div className="mt-6 flex gap-16">
+            <SpeechBubbleCard
+              image={marko}
+              name="Marko Suokas"
+              role="Messilä Golf Oy, kenttämestari"
+              quote="Työntekijänä Roi Byman on vastuullinen. Hoitaa hänelle annetut työt huolellisesti ja sovitusti. Hän on myös joustava, jotta hommat saadaan hoidettua sujuvasti. Noudattaa työaikoja."
+            />
+
+            <SpeechBubbleCard
+              image={roope}
+              name="Roope Suonio"
+              role="Lahti Basketball, toiminnanjohtaja"
+              quote="Roi Byman on aina Lahti Basketballin riveissä osoittanut todellista ammattimaisuutta, tavoitteellisuutta omien taitojen kehittämistä, hienoa johtajuutta ja häntä voi kutsua ihanteelliseksi työntekijäksi."
+            />
           </div>
       </div>
       <hr className='border-slate-200'/>
