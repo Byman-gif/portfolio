@@ -24,31 +24,40 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
     const dampingFactor = 0.95;
 
     const handlePointerDown = (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        setIsRotating(true);
+      e.stopPropagation();
+      e.preventDefault();
 
-        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-        lastX.current = clientX
-    }
+      setIsRotating(true);
+
+      lastX.current = e.clientX;
+
+      if (e.target.setPointerCapture) {
+        e.target.setPointerCapture(e.pointerId);
+      }
+    };
     const handlePointerUp = (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        setIsRotating(false);
-    }
+      e.stopPropagation();
+      e.preventDefault();
+
+      setIsRotating(false);
+
+      if (e.target.releasePointerCapture) {
+        e.target.releasePointerCapture(e.pointerId);
+      }
+    };
     const handlePointerMove = (e) => {
-        e.stopPropagation();
-        e.preventDefault();
+      e.stopPropagation();
+      e.preventDefault();
 
-        if(isRotating) {
-            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-            const delta = (clientX - lastX.current) / viewport.width;
+      if (isRotating) {
+        const delta = (e.clientX - lastX.current) / viewport.width;
 
-            islandRef.current.rotation.y += delta * 0.01 * Math.PI;
-            lastX.current = clientX;
-            rotationSpeed.current = delta * 0.01 * Math.PI;
-        }
-    }
+        islandRef.current.rotation.y += delta * 0.5;
+        lastX.current = e.clientX;
+
+        rotationSpeed.current = delta * 0.5;
+      }
+    };
     const handleKeyDown = (e) => {
         if(e.key === 'ArrowLeft') {
             if(!isRotating) setIsRotating(true);
@@ -124,9 +133,11 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
 
     useEffect(() => {
         const canvas = gl.domElement;
+        canvas.style.touchAction = 'none';
         canvas.addEventListener('pointerdown', handlePointerDown);
         canvas.addEventListener('pointerup', handlePointerUp);
         canvas.addEventListener('pointermove', handlePointerMove);
+
         document.addEventListener('keydown', handleKeyDown);
         document.addEventListener('keyup', handleKeyUp);
 
@@ -134,6 +145,8 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
             canvas.removeEventListener('pointerdown', handlePointerDown);
             canvas.removeEventListener('pointerup', handlePointerUp);
             canvas.removeEventListener('pointermove', handlePointerMove);
+            canvas.removeEventListener('pointerleave', handlePointerUp);
+            
             document.removeEventListener('keydown', handleKeyDown);
             document.removeEventListener('keyup', handleKeyUp);
         }
