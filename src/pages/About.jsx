@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import marko from '../assets/images/marko.jpg'
 import roope from '../assets/images/roope.jpg'
+import kalle from '../assets/images/kalle.png'
+import tuomo from '../assets/images/tuomo.png'
 import SpeechBubbleCard from '../components/ReferenceBubble';
 
 import { skills, experiences} from '../constants'
@@ -89,19 +91,33 @@ const About = () => {
             </VerticalTimeline>
           </div>
           <h3 className='subhead-text'>My Referees</h3>
-          <div className="mt-6 flex gap-15">
+          <div className="mt-6 flex flex-wrap justify-center gap-10">
             <SpeechBubbleCard
               image={marko}
               name="Marko Suokas"
-              role="Messilä Golf Oy, kenttämestari"
+              role="Messilä Golf Oy: kenttämestari"
               quote="Työntekijänä Roi Byman on vastuullinen. Hoitaa hänelle annetut työt huolellisesti ja sovitusti. Hän on myös joustava, jotta hommat saadaan hoidettua sujuvasti. Noudattaa työaikoja."
             />
 
             <SpeechBubbleCard
               image={roope}
               name="Roope Suonio"
-              role="Lahti Basketball, toiminnanjohtaja"
+              role="Lahti Basketball: toiminnanjohtaja"
               quote="Roi Byman on aina Lahti Basketballin riveissä osoittanut todellista ammattimaisuutta, tavoitteellisuutta omien taitojen kehittämistä, hienoa johtajuutta ja häntä voi kutsua ihanteelliseksi työntekijäksi."
+            />
+
+            <SpeechBubbleCard
+              image={tuomo}
+              name="Tuomo Tamminen"
+              role="Loihde, CyberCloudConnect: Head of Inside Sales"
+              quote="Suosittelen Roi Bymania lämpimästi tehtäviin, joissa tarvitaan tarkkuutta, vastuullisuutta, yhteistyökykyä ja vahvaa ammatillista osaamista. Roi on huolellinen, luotettava ja helposti lähestyttävä. Hän suhtautuu työhönsä vastuullisesti, tekee oman osuutensa perusteellisesti ja osaa yhdistää kokonaisuuksien hahmottamisen tarkkaan yksityiskohtien huomioimiseen. Tämä tekee hänestä erinomaisesti sopivan tehtäviin, joissa vaaditaan järjestelmällistä ja tarkkaa työotetta."
+            />
+
+            <SpeechBubbleCard
+              image={kalle}
+              name="Kalle Kivilahti"
+              role="Virnex: Full Stack Kehittäjä ja IT konsultti"
+              quote="Roi Byman ottaa muut huomioon ja pyrkii löytämään ratkaisuja, jotka tukevat koko tiimin työskentelyä. Hän on todellinen tiimipelaaja, joka hoitaa oman osuutensa huolellisesti loppuun asti ja on sen jälkeen valmis auttamaan myös muita."
             />
           </div>
       </div>

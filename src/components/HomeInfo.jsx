@@ -17,21 +17,21 @@ const renderContent = {
         <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
         Hi, I am <span className='font-semibold'>Roi</span> 👋
         <br/>
-        A Software Engineer And This Is My Portfolio
+        A Software Engineer And This Is My Portfolio 💼
         <br/>
         You can Rotate the island to learn more about me and you can also see my projects and contact me!
         </h1>
     ),
     2: (
         <InfoBox
-            text="Graduated 2026 as a Bachelor of Information and Communication Techology and developed many skills along the way"
+            text="Graduated 2026 as a Bachelor of Information and Communication Techology and developed many skills along the way. 🎓" 
             link="/about"
             btnText="Learn more about me"
         />
     ),
     3: (
         <InfoBox
-            text="Here are some of my projects that i have made during my years"
+            text="Here are some of my projects that i have made during my years! 🛠️"
             link="/projects"
             btnText="See more"
         />

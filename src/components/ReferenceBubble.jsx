@@ -1,16 +1,28 @@
-import React from "react";
-
+import React, { useState } from "react";
 
 const SpeechBubbleCard = ({ image, name, role, quote }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="relative inline-block group">
+    <div
+      className="relative inline-block group cursor-pointer"
+      onClick={() => setIsOpen((prev) => !prev)}
+    >
       <img
         src={image}
         alt={name}
         className="w-40 h-40 rounded-full object-cover border-3 border-black"
       />
 
-      <div className="absolute left-full top-1/2 ml-4 -translate-y-1/2 opacity-0 scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 pointer-events-none z-20">
+      <div
+        className={`
+          absolute left-full top-1/2 ml-4 -translate-y-1/2
+          opacity-0 scale-95 transition-all duration-300
+          group-hover:opacity-100 group-hover:scale-100
+          pointer-events-none z-20
+          ${isOpen ? "opacity-100 scale-100" : ""}
+        `}
+      >
         <div className="relative bg-gray-200 p-4 w-80 shadow-md rounded-sm">
           <h3 className="text-2xl font-bold">{name}</h3>
           <p className="font-semibold">{role}</p>
