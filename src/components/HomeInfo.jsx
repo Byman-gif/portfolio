@@ -18,6 +18,8 @@ const renderContent = {
         Hi, I am <span className='font-semibold'>Roi</span> 👋
         <br/>
         A Software Engineer And This Is My Portfolio
+        <br/>
+        You can Rotate the island to learn more about me and you can also see my projects and contact me!
         </h1>
     ),
     2: (

@@ -52,10 +52,10 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
       if (isRotating) {
         const delta = (e.clientX - lastX.current) / viewport.width;
 
-        islandRef.current.rotation.y += delta * 0.5;
+        islandRef.current.rotation.y += delta * 0.1;
         lastX.current = e.clientX;
 
-        rotationSpeed.current = delta * 0.5;
+        rotationSpeed.current = delta * 0.1;
       }
     };
     const handleKeyDown = (e) => {
