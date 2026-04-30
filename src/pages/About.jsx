@@ -117,7 +117,7 @@ const About = () => {
               image={kalle}
               name="Kalle Kivilahti"
               role="Virnex: Full Stack Kehittäjä ja IT konsultti"
-              quote="Roi Byman ottaa muut huomioon ja pyrkii löytämään ratkaisuja, jotka tukevat koko tiimin työskentelyä. Hän on todellinen tiimipelaaja, joka hoitaa oman osuutensa huolellisesti loppuun asti ja on sen jälkeen valmis auttamaan myös muita."
+              quote="Roi Byman ottaa muut huomioon ja pyrkii löytämään ratkaisuja, jotka tukevat koko tiimin työskentelyä. Hän on todellinen tiimipelaaja, joka hoitaa oman osuutensa huolellisesti loppuun asti ja on sen jälkeen valmis auttamaan myös muita. Roi lähestyy ongelmia myönteisellä ja ratkaisukeskeisellä otteella, ja hänen positiivinen asenteensa näkyy myös ympärillä olevaan työilmapiiriin."
             />
           </div>
       </div>

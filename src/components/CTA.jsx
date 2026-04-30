@@ -10,13 +10,13 @@ const CTA = () => {
         <br className='sm:block hidden' />
       </p>
 
-      <Link to='/contact' className='btn'>
+      <Link to='/contact' className='btn shadow-xl'>
         Contact
       </Link>
 
       <div className='flex items-center justify-center gap-5 mt-1'>
         <a
-          href='https://www.linkedin.com/in/SINUN-LINKEDIN/'
+          href='https://www.linkedin.com/in/roi-byman/'
           target='_blank'
           rel='noopener noreferrer'
           aria-label='LinkedIn profile'
