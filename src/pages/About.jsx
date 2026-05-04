@@ -95,14 +95,14 @@ const About = () => {
             <SpeechBubbleCard
               image={marko}
               name="Marko Suokas"
-              role="Messilä Golf Oy: kenttämestari"
+              role="Messilä Golf Oy: Kenttämestari"
               quote="Työntekijänä Roi Byman on vastuullinen. Hoitaa hänelle annetut työt huolellisesti ja sovitusti. Hän on myös joustava, jotta hommat saadaan hoidettua sujuvasti. Noudattaa työaikoja."
             />
 
             <SpeechBubbleCard
               image={roope}
               name="Roope Suonio"
-              role="Lahti Basketball: toiminnanjohtaja"
+              role="Lahti Basketball: Toiminnanjohtaja"
               quote="Roi Byman on aina Lahti Basketballin riveissä osoittanut todellista ammattimaisuutta, tavoitteellisuutta omien taitojen kehittämistä, hienoa johtajuutta ja häntä voi kutsua ihanteelliseksi työntekijäksi."
             />
 
