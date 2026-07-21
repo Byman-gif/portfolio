@@ -22,6 +22,7 @@ import ridelogo from './ridelogo.png'
 import snapgram from './snapgram.svg'
 import food from './food.svg'
 import dice from './dice.svg'
+import job from './job.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
@@ -52,6 +53,7 @@ export {
     snapgram,
     food,
     dice,
+    job,
     arrow,
     contact,
     soundon,
