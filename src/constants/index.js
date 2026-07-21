@@ -201,7 +201,7 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'My Job Application Tracker',
         description: 'Created a web application to track job applications and maange the status of the applications.',
-        video: '/videos/job_application_tracker_agent.mp4',
+        video: '/videos/jobapp.mp4',
     },
     {
         iconUrl: food,
