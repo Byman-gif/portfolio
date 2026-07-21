@@ -200,7 +200,7 @@ export const projects = [
         iconUrl: dice,
         theme: 'btn-back-yellow',
         name: 'My Job Application Tracker',
-        description: 'Created a web application to track job applications and maange the status of the applications.',
+        description: 'Created a web application to track job applications and manage the status of the applications.',
         video: '/videos/jobapp.mp4',
     },
     {
