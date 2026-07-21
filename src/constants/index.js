@@ -196,6 +196,13 @@ export const projects = [
         description: 'Created a mobile game that has wall jump mechanics and attack mechanics were you are supposed to pick up diamonds and scored with each pick. You have also a pause in the game.',
         video: '/videos/mygame.mov',
     },
+    {  
+        iconUrl: dice,
+        theme: 'btn-back-yellow',
+        name: 'My Job Application Tracker',
+        description: 'Created a web application to track job applications and maange the status of the applications.',
+        video: '/videos/job_application_tracker_agent.mp4',
+    },
     {
         iconUrl: food,
         theme: 'btn-back-blue',
