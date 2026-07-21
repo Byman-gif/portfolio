@@ -11,6 +11,7 @@ import {
     javascript,
     linkedin,
     unity,
+    job,
     blender,
     nextjs,
     nodejs,
@@ -197,7 +198,7 @@ export const projects = [
         video: '/videos/mygame.mov',
     },
     {  
-        iconUrl: dice,
+        iconUrl: job,
         theme: 'btn-back-yellow',
         name: 'My Job Application Tracker',
         description: 'Created a web application to track job applications and manage the status of the applications.',
