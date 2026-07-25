@@ -19,7 +19,7 @@ import {
     react,
     c,
     csharp,
-    food,
+    pump,
     tailwindcss,
     dice,
     typescript,
@@ -205,7 +205,7 @@ export const projects = [
         video: '/videos/jobapp.mp4',
     },
     {
-        iconUrl: job,
+        iconUrl: pump,
         theme: 'btn-back-blue',
         name: 'Electicity spot price tracker integrated into a Air heat pump',
         description: 'Building an app that tracks electricity spot prices and integrates them into an air heat pump system. Trying to minimize electricity bills for a customer by tracking and optimizing usage. THIS IS IN PROGRESS STILL!',
