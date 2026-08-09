@@ -5,6 +5,7 @@ import marko from '../assets/images/marko.jpg'
 import roope from '../assets/images/roope.jpg'
 import kalle from '../assets/images/kalle.png'
 import tuomo from '../assets/images/tuomo.png'
+import arto from '../assets/images/arto.png'
 import SpeechBubbleCard from '../components/ReferenceBubble';
 
 import { skills, experiences} from '../constants'
@@ -118,6 +119,12 @@ const About = () => {
               name="Kalle Kivilahti"
               role="Virnex: Full Stack Kehittäjä ja IT konsultti"
               quote="Roi Byman ottaa muut huomioon ja pyrkii löytämään ratkaisuja, jotka tukevat koko tiimin työskentelyä. Hän on todellinen tiimipelaaja, joka hoitaa oman osuutensa huolellisesti loppuun asti ja on sen jälkeen valmis auttamaan myös muita. Roi lähestyy ongelmia myönteisellä ja ratkaisukeskeisellä otteella, ja hänen positiivinen asenteensa näkyy myös ympärillä olevaan työilmapiiriin."
+            />
+            <SpeechBubbleCard
+              image={arto}
+              name="Arto Haikonen"
+              role="Nordic Insurance Solutions Oy: Toimitusjohtaja"
+              quote="Olen tuntenut Roin pienestä pojasta asti ja voin suositella häntä, vaikka en ole työskennellytkään hänen kanssaan. Olen oppinut tuntemaan Roin sanansa mittaisena ja tunnollisena miehenä. Palkkaisin hänet itsekin mutta start-upin kassa ei vielä toistaiseksi anna siihen mahdollisuutta."
             />
           </div>
       </div>
