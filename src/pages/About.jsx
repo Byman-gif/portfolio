@@ -118,7 +118,7 @@ const About = () => {
             <SpeechBubbleCard
               image={timo}
               name="Timo Kuittinen"
-              role="Päijät-Hämeen hyvinvointialue: Ylihammaslääkäri"
+              role="Päijät-Hämeen hyvinvointialue: HLL, Ylihammaslääkäri"
               quote="Olen tuntenut Roin pitkään ja saanut seurata hänen kehittymistään luotettavaksi, oma-aloitteiseksi ja yhteistyökykyiseksi ammattilaiseksi. Hän tarttuu uusiin haasteisiin innostuneesti, oppii nopeasti ja vie ideat määrätietoisesti käytäntöön. Roi kykenee hahmottamaan tarpeita ja rakentamaan niiden pohjalta toimivia ratkaisuja. Hän on vastuullinen, helposti lähestyttävä ja sitoutuu tehtäviinsä vahvasti. Pitkäaikaisen tuntemukseni perusteella voin lämpimästi suositella häntä tehtäviin, joissa arvostetaan teknistä osaamista, kehittämisotetta ja kykyä saada asioita aikaan."
             />
 
